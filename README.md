@@ -8,7 +8,7 @@
       pacman -S vim nano less diffutils zip unzip dos2unix patch mingw-w64-ucrt-x86_64-imagemagick
       ```
 
-* **Zadanie 3: Niesforne dane** https://github.com/andustarystack/projekt-na-programowanie/blob/dc240283e056561e02e3f887b3f27d139e6aff28/zadania/zadanie_3_dane.sh
+* **Zadanie 3: Niesforne dane** [https://github.com/andustarystack/projekt-na-programowanie/blob/dc240283e056561e02e3f887b3f27d139e6aff28/zadania/zadanie_3_dane.sh](https://github.com/andustarystack/projekt-na-programowanie/blob/main/zadania/zadanie_3_dane.sh)
     * Aby przekształcić jedną kolumnę w trzy (x, y, z), użyto skryptu `awk` (który automatycznie przetwarza 100% wierszy wejściowych):
       ```bash
       echo -e "x\ty\tz" > dane_gotowe.txt
