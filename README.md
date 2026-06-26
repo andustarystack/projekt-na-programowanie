@@ -1,3 +1,5 @@
+## [LINK DO SPRAWOZDANIA](https://docs.google.com/document/d/1Maiyx-rwcyaZ-mdgrOL8RLXDTcBM0Fz_jD5vpOq_Dkw/edit?usp=sharing)
+
 ## Rozwiązania poszczególnych zadań
 
 * **Zadanie 1 i 2: Zespoły, narzędzia oraz MSYS2**
