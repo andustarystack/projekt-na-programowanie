@@ -8,14 +8,14 @@
       pacman -S vim nano less diffutils zip unzip dos2unix patch mingw-w64-ucrt-x86_64-imagemagick
       ```
 
-* **Zadanie 3: Niesforne dane** https://github.com/andustarystack/projekt-na-programowanie/blob/main/zadania/zadanie_3_dane.sh
+* **Zadanie 3: Niesforne dane** [zadanie 3](https://github.com/andustarystack/projekt-na-programowanie/blob/main/zadania/zadanie_3_dane.sh)
     * Aby przekształcić jedną kolumnę w trzy (x, y, z), użyto skryptu `awk` (który automatycznie przetwarza 100% wierszy wejściowych):
       ```bash
       echo -e "x\ty\tz" > dane_gotowe.txt
       awk '{a[NR%3]=$1} NR%3==0 {print a[1]"\t"a[2]"\t"a[0]}' dane.txt >> dane_gotowe.txt
       ```
 
-* **Zadanie 4: Dodawanie poprawek** https://github.com/andustarystack/projekt-na-programowanie/blob/main/zadania/zadanie_4_patch.sh
+* **Zadanie 4: Dodawanie poprawek** [zadanie 4](https://github.com/andustarystack/projekt-na-programowanie/blob/main/zadania/zadanie_4_patch.sh)
     * Utworzenie łatki weryfikującej różnice:
       ```bash
       diff -u lista.txt lista-pop.txt > poprawka.patch
@@ -29,7 +29,7 @@
       md5sum lista.txt lista-pop.txt
       ```
 
-* **Zadanie 5: Z CSV do SQL i z powrotem** https://github.com/andustarystack/projekt-na-programowanie/blob/main/zadania/zadanie_5_sql_cvs.sh
+* **Zadanie 5: Z CSV do SQL i z powrotem** [zadanie 5](https://github.com/andustarystack/projekt-na-programowanie/blob/main/zadania/zadanie_5_sql_cvs.sh)
     * Generowanie poleceń SQL z pliku CSV:
       ```bash
       awk -F';' 'NR>1 {print "INSERT INTO stepsData (time, intensity, steps) VALUES ("$1", "$2", "$3");"}' steps-2sql.csv > steps-2sql_import.sql
@@ -40,7 +40,7 @@
       awk -F'[(), ]+' '/INSERT/ { timestamp=substr($5, 1, length($5)-3); print timestamp";"$6";"$7 }' steps-2csv.sql >> steps-2csv_export.csv
       ```
 
-* **Zadanie 6: Marudny tłumacz** https://github.com/andustarystack/projekt-na-programowanie/blob/main/zadania/zadanie_6_translate.sh
+* **Zadanie 6: Marudny tłumacz** [zadanie 6](https://github.com/andustarystack/projekt-na-programowanie/blob/main/zadania/zadanie_6_translate.sh)
     * Zdublowanie linii w pliku JSON5 i zakomentowanie pierwszego wystąpienia:
       ```bash
       sed 's/\(.*".*":.*\)/\/\/ \1\n\1/' en-7.2.json5 > pl-7.2.json5
@@ -50,7 +50,7 @@
       diff --new-line-format="" --unchanged-line-format="" <(grep '"' en-7.4.json5) <(grep '"' en-7.2.json5) > pl-7.4.json5
       ```
 
-* **Zadanie 7: Fotografik gamoń** https://github.com/andustarystack/projekt-na-programowanie/blob/main/zadania/zadanie_7_fotograf.sh
+* **Zadanie 7: Fotografik gamoń** [zadanie 7](https://github.com/andustarystack/projekt-na-programowanie/blob/main/zadania/zadanie_7_fotograf.sh)
     * Konwersja obrazów (100% z nich zostało zmienionych do formatu JPG, z DPI na 96x96 i wysokością ograniczoną do 720px):
       ```bash
       unzip 'kopie-*.zip' -d zdjecia/
@@ -60,14 +60,14 @@
       zip ../portfolio.zip *.jpg
       ```
 
-* **Zadanie 8: Wszędzie te PDF-y** https://github.com/andustarystack/projekt-na-programowanie/blob/main/zadania/zadanie_8_pdf.sh
+* **Zadanie 8: Wszędzie te PDF-y** [zadanie 8](https://github.com/andustarystack/projekt-na-programowanie/blob/main/zadania/zadanie_8_pdf.sh)
     * Wygenerowanie arkusza A4 z siatką zdjęć (2x4) i podpisami (skrypt wykonany w 1 linii w narzędziu `magick`):
       ```bash
       cd zdjecia/
       magick montage -label '%f' -tile 2x4 -geometry +10+10 -page A4 *.jpg portfolio.pdf
       ```
 
-* **Zadanie 9: Porządki w kopiach zapasowych** https://github.com/andustarystack/projekt-na-programowanie/blob/main/zadania/zadanie_9_cleanup.sh
+* **Zadanie 9: Porządki w kopiach zapasowych** [zadanie 9](https://github.com/andustarystack/projekt-na-programowanie/blob/main/zadania/zadanie_9_cleanup.sh)
     * Skrypt bash iterujący po plikach w celu ułożenia ich w (100%) poprawnej hierarchii katalogów:
       ```bash
       cd kopie/
@@ -79,7 +79,7 @@
       done
       ```
 
-* **Zadanie 10: Galeria dla grafika** https://github.com/andustarystack/projekt-na-programowanie/blob/main/zadania/zadanie_10_gellery.sh
+* **Zadanie 10: Galeria dla grafika** [zadanie 10](https://github.com/andustarystack/projekt-na-programowanie/blob/main/zadania/zadanie_10_gellery.sh)
     * Wygenerowanie kodu HTML z automatycznie podmienionymi nazwami plików dla obrazów graficznych:
       ```bash
       for img in *.jpg; do
