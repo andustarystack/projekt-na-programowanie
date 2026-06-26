@@ -1,8 +1,9 @@
 ## Rozwiązania poszczególnych zadań
 
 * **Zadanie 1 i 2: Zespoły, narzędzia oraz MSYS2**
-    * Konfiguracja darmowego konta GitHub oraz usługi chmurowej Google Drive
-    * Po instalacji MSYS2 aktualizacja środowiska i instalacja wymaganych programów korzystając z menedżera `pacman`:
+    * Założenie darmowego konta GitHub oraz Google Drive
+    * Instalacja MSYS2 https://www.msys2.org/
+    * aktualizacja środowiska i instalacja wymaganych programów korzystając z menedżera `pacman`:
       ```bash
       pacman -S vim nano less diffutils zip unzip dos2unix patch mingw-w64-ucrt-x86_64-imagemagick
       ```
