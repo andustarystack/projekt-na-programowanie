@@ -2,15 +2,6 @@
 
 **TL;DR: Raport zawiera kompletne rozwiązania skryptowe dla projektu, wykorzystujące m.in. narzędzia bash, awk, sed oraz magick (skuteczność w 100% zgodna z poleceniami), by sprawnie przetworzyć pliki i dane.**
 
-## Podsumowanie środowiska pracy
-
-| Kategoria Zadania | Wykorzystywane Narzędzia | Szacowany Udział Zadań |
-| :--- | :--- | :--- |
-| **Konfiguracja i Środowisko** | Git, Google Workspace, MSYS2, pacman | 20% |
-| **Przetwarzanie Danych (Tekst/SQL)** | `awk`, `sed`, `diff`, `patch` | 40% |
-| **Przetwarzanie Obrazów i PDF** | `magick`, `zip`, `unzip` | 20% |
-| **Zarządzanie Plikami (Skrypty Bash)** | `bash` (pętle), `mv`, `mkdir` | 20% |
-
 ---
 
 ## Rozwiązania poszczególnych zadań
