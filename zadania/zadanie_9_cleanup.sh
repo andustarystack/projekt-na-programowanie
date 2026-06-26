@@ -7,4 +7,4 @@ for plik in *.zip; do
     mv "$plik" "$rok/$miesiac/"
 done
 cd ..
-#jakieśbzdury
+
