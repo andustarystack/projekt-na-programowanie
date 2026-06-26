@@ -1,13 +1,7 @@
-# Sprawozdanie z zadań projektowych - Podstawy Programowania
-
-**TL;DR: Raport zawiera kompletne rozwiązania skryptowe dla projektu, wykorzystujące m.in. narzędzia bash, awk, sed oraz magick (skuteczność w 100% zgodna z poleceniami), by sprawnie przetworzyć pliki i dane.**
-
----
-
 ## Rozwiązania poszczególnych zadań
 
 * **Zadanie 1 i 2: Zespoły, narzędzia oraz MSYS2**
-    * Konfiguracja darmowego konta na wybranej platformie (np. GitHub, GitLab, Bitbucket) oraz usługi chmurowej do sprawozdań (np. Google Drive, OneDrive - wszystkie 100% darmowe w podstawowych wersjach).
+    * Konfiguracja darmowego konta GitHub oraz usługi chmurowej Google Drive
     * Po instalacji MSYS2 aktualizacja środowiska i instalacja wymaganych programów korzystając z menedżera `pacman`:
       ```bash
       pacman -S vim nano less diffutils zip unzip dos2unix patch mingw-w64-ucrt-x86_64-imagemagick
