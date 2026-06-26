@@ -1,0 +1,20 @@
+# Archiwa ZIP pobrane do zadań (zbyt duże na GitHub)
+kopie-1.zip
+kopie-2.zip
+kopie-*.zip
+
+# Pliki tymczasowe edytorów tekstowych i środowisk
+*~
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Pliki systemowe (Windows / macOS)
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Logi i pliki tymczasowe terminala
+*.log
+.bash_history
